@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #1abc9c;
+    text-align: center;
+    padding: 80px;
+}
+.nav{
+    display: flex;
+    background-color: midnightblue;
+}
+.nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+.nav a:hover{
+    color: black;
+    background-color: wheat;
+}
+.container{
+    display: flex;
+}
+.leftsidebar{
+    flex: 1;
+    padding: 10px;
+}
+.rightsidebar{
+    flex: 3;
+    padding: 10px;
+}
+.leftsidebar .profile{
+    background-color: #aaa;
+    height: 120px;
+    padding: 20px;
+}
+.readmore{
+    background-color: #aaa;
+    height: 30px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.rightsidebar div{
+    background-color: #aaa;
+    height: 150px;
+    padding: 20px;
+}
+footer h2{
+    text-align: center;
+    padding: 50px;
+    background-color: lightslategray;
+}
+@media (max-width: 700px) {
+    .nav, .container{
+        flex-direction: column;
+    }
+}
